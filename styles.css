@@ -1,27 +1,31 @@
+/* media query - task2 maybe?? */
+
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
- 
-  
+  box-sizing: border-box; 
+  /* best practice */
 }
 
 body {
   width: 100%;
   height: 100vh;
+  /* entire screen*/
   background-color: white;
+  font-family:sans-serif
 }
 
 .example {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 999;
+
+  /* position fixed positioning */
   
 }
 
 .clone {
-  width: fit-content;
+  /* width: fit-content;  no need Q?*/
 
   font-size: 40px;
   text-align: center;
@@ -53,50 +57,48 @@ header {
 }
 
 nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  /* align-items: flex-end; */
+  /* justify-content: flex-end; */
+  /* no need for these i think because it is already been handled in the parent */
   gap: 30px;
-  padding: 15px 30px;
+  /* padding: 15px 30px; removing this line removes the scroll and no much difference */
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
 }
 nav a {
   display: inline-block;
+  /* transform doesn't work without inline-block */
   text-decoration: none;
-  color: #333;
   font-weight: bold;
   transition: color 0.2s ease;
 }
 
 nav a:hover {
   color: #0077cc;
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 .first {
   width: 100%;
   height: 400px;
-  background-color: #FAEBD7;
+  /* take the entire width and height only 400px */
+  background-color: #FAEBD7; 
+  /* searched online for the exact hex coe color */
   border: 4px solid black;
 padding: 250px;
 display: flex;
 align-items: center;
 justify-content: space-between;
-
+/* sizing by trail and error i think could be enhanced
+Q? */
 
 
 
   
 }
-.content {
-  
-  width: fit-content;
-}
 
+/* the buttons all share btn class for similarity in styling and different ids for  */
 
 .btn {
   width: 120px;
@@ -111,7 +113,7 @@ justify-content: space-between;
 }
 
 .box-btns {
-  margin-top: 10px;
+  margin-top: 22px;
   display: flex;
   gap: 25px;
   
@@ -139,6 +141,7 @@ justify-content: space-between;
 }
 .out-title {
   margin-top: 25px;
+  font-size: 35px;
 }
 .iarea {
 
@@ -147,7 +150,7 @@ justify-content: space-between;
   align-items: center;
   margin-top: 40px;
   margin-bottom: 20px;
-  text-align: center;
+  /* text-align: center; no need */
   padding: 0 50px; 
   gap: 25px;
 }
