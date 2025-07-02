@@ -1,159 +1,299 @@
-/* media query - task2 maybe?? */
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; 
-  /* best practice */
+*{
+  margin: 0px;
+  padding:0px;
+  box-sizing: border-box;
+  
+}
+body{
+  width: 100%;
+height: 100vh;
+/* background-color: aquamarine; */
 }
 
-body {
+.first{
   width: 100%;
   height: 100vh;
-  /* entire screen*/
-  background-color: white;
-  font-family:sans-serif
+  background-color: #FAEBD7;
 }
-
-.example {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-
-  /* position fixed positioning */
-  
-}
-
-.clone {
-  /* width: fit-content;  no need Q?*/
-
-  font-size: 40px;
-  text-align: center;
-  border: 2px solid #000;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-  transition: transform 0.2s ease;
-}
-
-.clone:hover {
-  transform: scale(1.05);
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-a:visited {
-  color: #000;
-  text-decoration: none;
-}
-
-header {
+.first .header {
+  width: 100%;
+  height: 10%;
+  background-color: aliceblue;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
+  margin: auto;
 }
 
-nav ul {
+.first .header .main-title {
+  width:40%;
+  height: 100%;
+  /* background-color:blue; */
+  margin: auto;
   display: flex;
-  /* align-items: flex-end; */
-  /* justify-content: flex-end; */
-  /* no need for these i think because it is already been handled in the parent */
-  gap: 30px;
-  /* padding: 15px 30px; removing this line removes the scroll and no much difference */
-  font-weight: bold;
-  font-size: 25px;
+  align-items: center;
 }
-nav a {
+
+.first .header .links {
+    width: 40%;
+  height: 100%;
+  /* background-color:green; */
+  margin: auto;
+   
+}
+
+.first .header .links ul {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+ display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 30px;
+  gap: 60px;
+}
+
+
+
+.first .header .links ul li a {
   display: inline-block;
-  /* transform doesn't work without inline-block */
+  padding: 5px 10px;
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.2s ease;
+  color: black;
+  transform: scale(1);
+  transition: transform 0.3s ease-in;
 }
 
-nav a:hover {
-  color: #0077cc;
-  transform: scale(1.2);
+.first .header .links ul li a:hover {
+  transform: scale(1.05);
+  color: darkblue;
 }
 
-.first {
+
+
+.first .header .main-title h1 {
+  font-size: 60px;
+}
+
+.first .box {
   width: 100%;
-  height: 400px;
-  /* take the entire width and height only 400px */
-  background-color: #FAEBD7; 
-  /* searched online for the exact hex coe color */
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  
+  
+  /* background-color: aquamarine; */
   border: 4px solid black;
-padding: 250px;
-display: flex;
-align-items: center;
-justify-content: space-between;
-/* sizing by trail and error i think could be enhanced
-Q? */
-
-
-
-  
 }
 
-/* the buttons all share btn class for similarity in styling and different ids for  */
-
-.btn {
-  width: 120px;
-  height: 40px;
-  border: 2px solid black;
-   font-weight: bold;
-}
-.btn:hover {
-  color: #0077cc;
-  transform: scale(1.05); 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
-}
-
-.box-btns {
-  margin-top: 22px;
+.first .box .content {
+  width:40%;
+  height:100%;
+  /* background-color: brown; */
   display: flex;
-  gap: 25px;
-  
-}
-.box-title{
-  font-size: 80px;
-}
-.box-paragraph {
-
-  font-size: 20px;
-}
-
-#left-btn {
-  background-color: white;
- 
-}
-
-#right-btn {
-  background-color: transparent;
-}
-.second {
-  width: 100%;
-  height: 500px;
-  text-align: center;
-}
-.out-title {
-  margin-top: 25px;
-  font-size: 35px;
-}
-.iarea {
-
-  display: flex;
-  justify-content: center;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  /* text-align: center; no need */
-  padding: 0 50px; 
-  gap: 25px;
+
 }
-.start-now {
-  margin-bottom: 20px;
+.first .box .image {
+  width: 40%;
+  height: 100%;
+  /* background-color: blue; */
+}
+.first .box .content .all-content {
+  width: 100%;
+  height: 70%;
+  /* background-color: bisque; */
+}
+
+.first .box .content .all-content .box-title h1 {
+font-size: 85px;
+}
+.first .box .content .all-content .box-paragraph p {
+  font-size: 25px;
+  margin: 20px 0px;
+}
+.first .box .content .all-content .box-btns{
+  display: flex;
+  gap: 30px;
+  margin-top: 15px;
+  
+}
+.first .box .content .all-content .box-btns button {
+  width: 150px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+.first .box .content .all-content .box-btns .left-btn {
+  background-color: #fff;
+  transform: scale(1);
+  color: black;
+  transition: transform 0.5s ease-in-out;
+}
+.first .box .content .all-content .box-btns .left-btn:hover {
+  color: darkblue;
+  transform: scale(1.05);
+}
+.first .box .content .all-content .box-btns .right-btn {
+  background-color: transparent;
+    transform: scale(1);
+  color: black;
+  transition: transform 0.5s ease-in-out; 
+}
+.first .box .content .all-content .box-btns .right-btn:hover {
+   color: darkblue;
+  transform: scale(1.1);
+  background-color: #fff;
+  
+
+
+}
+.first .box .image {
+  display: flex;
+
+  align-items: center;
+}
+.first .box .image img {
+  
+  width: 100%;
+  height: 90%;
+  
+}
+/* Media Queries */
+@media (max-width: 1440px) {
+      .first{
+    height: 100%;
+  }
+  body
+  {
+    height: 120vh;
+  }
+  
+}
+@media (max-width: 1200px) {
+  .first .header .main-title h1 {
+    font-size: 50px;
+  }
+  
+  .first .header .links ul {
+    font-size: 25px;
+    gap: 40px;
+  }
+  
+  .first .box .content .all-content .box-title h1 {
+    font-size: 70px;
+  }
+  
+  .first .box .content .all-content .box-paragraph p {
+    font-size: 22px;
+  }
+    .first{
+    height: 100%;
+  }
+  body
+  {
+    height: 185vh;
+  }
+}
+
+@media (max-width: 992px) {
+  .first .header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+  
+  .first .header .main-title,
+  .first .header .links {
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .first .header .links ul {
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  .first .box {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 0;
+  }
+  
+  .first .box .content,
+  .first .box .image {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .first .box .image {
+    order: -1;
+    margin-bottom: 30px;
+  }
+  
+  .first .box .image img {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .first .header .main-title h1 {
+    font-size: 40px;
+  }
+  
+  .first .header .links ul {
+    font-size: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .first .box .content .all-content .box-title h1 {
+    font-size: 50px;
+  }
+  
+  .first .box .content .all-content .box-paragraph p {
+    font-size: 18px;
+  }
+  
+  .first .box .content .all-content .box-btns {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .first .box .content .all-content .box-btns button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .first .header .main-title h1 {
+    font-size: 30px;
+  }
+  
+  .first .header .links ul {
+    font-size: 16px;
+    gap: 20px;
+  }
+  
+  .first .box .content .all-content .box-title h1 {
+    font-size: 36px;
+  }
+  
+  .first .box .content .all-content .box-paragraph p {
+    font-size: 16px;
+  }
+  
+  .first{
+    height: 100%;
+  }
+  body
+  {
+    height: 150vh;
+  }
+  .first .box {
+    border: none;
+    
+  }
 }

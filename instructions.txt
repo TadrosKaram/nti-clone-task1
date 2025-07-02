@@ -1,0 +1,5 @@
+1-make a clone of the site 
+2-make everything perfectly inline
+3-make it responsive on all screens using media query
+
+see all nti tasks live-demo at my portfolio tadroskaram.github.io
