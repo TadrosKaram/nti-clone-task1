@@ -11,3 +11,6 @@ This is a responsive landing page clone created as part of the NTI Front-End Boo
 - 🧹 Organized CSS for maintainability
 
 
+## 🚀 Live preview
+
+http://tadroskaram.me/nti-clone-task1/
